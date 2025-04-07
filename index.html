@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | News homepage</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <header>
+    <nav>
+      <figure>
+        <img src="./assets/images/logo.svg" alt="The Company Logo">
+      </figure>
+
+      <div class="main_nav">
+        <ul class="nav_link">
+          <li><a href="#home" target="_blank">Home</a></li>
+          <li><a href="#new" target="_blank">New</a></li>
+          <li><a href="#popular" target="_blank">Popular</a></li>
+          <li><a href="#trending" target="_blank">Trending</a></li>
+          <li><a href="#categories" target="_blank">Categories</a></li>
+        </ul>
+      </div>
+
+      <div class="hamb hidden">
+        <figure class="hamburger">
+          <img src="./assets/images/icon-menu.svg" alt="The hamburger menu icon" onclick="document.getElementById('sharp').style.display='block'; document.getElementById('sharp').style.transition='all 0.5s ease-in-out';">
+        </figure>
+      </div>
+      <div id="sharp" class="nav_container hidden">
+        <figure class="close">
+          <img src="./assets/images/icon-menu-close.svg" alt="The close icon" onclick="document.getElementById('sharp').style.display='none'; document.getElementById('sharp').style.transition='all 0.5s ease-in-out';">
+        </figure>
+        <ul class="inside_nav">
+          <li><a href="#home" target="_blank">Home</a></li>
+          <li><a href="#new" target="_blank">New</a></li>
+          <li><a href="#popular" target="_blank">Popular</a></li>
+          <li><a href="#trending" target="_blank">Trending</a></li>
+          <li><a href="#categories" target="_blank">Categories</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="first_section">
+        <figure>
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="Image web 3.0">
+        </figure>
+        <div class="dmain">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="maind">
+            <p>
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <button>Read more</button>
+          </div>
+        </div>
+      </section>
+      <aside>
+        <h2>New</h2>
+        <div class="aside_cont">
+          <article>
+            <a href="#" target="_blank">Hydrogen VS Electric Cars</a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+          <hr>
+          <article>
+            <a href="#" target="_blank">The Downsides of AI Artistry</a>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </article>
+          <hr>
+          <article>
+            <a href="#" target="_blank">Is VC Funding Drying Up?</a>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>
+        </div>
+      </aside>
+    </div>
+
+    <section class="second_section">
+      <article class="outer">
+        <figure>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Image of retro pcs" class="imagen" width="250px" height="200px">
+        </figure>
+        <div class="inner">
+          <h2>01</h2>
+          <a href="#retro" target="_blank">Reviving Retro PCs</a>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+      <article class="outer">
+        <figure>
+          <img src="./assets/images/image-top-laptops.jpg" alt="Image showing part of the keyboard" class="imagen" width="250px" height="200px">
+        </figure>
+        <div class="inner">
+          <h2>02</h2>
+          <a href="#topten" target="_blank">Top 10 Laptops of 2022</a>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+      <article class="outer">
+        <figure>
+          <img src="./assets/images/image-gaming-growth.jpg" alt="Image of a ps5 controller floating above a man's palm" class="imagen" width="250px" height="200px">
+        </figure>
+        <div class="inner">
+          <h2>03</h2>
+          <a href="#growth" target="_blank">The Growth of Gaming</a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
